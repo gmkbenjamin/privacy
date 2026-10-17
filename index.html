@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Apps, Browser Extensions &amp; Tools (gmkbenjamin)</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6efe2;
+      --panel: #fbf7ef;
+      --ink: #2b2620;
+      --muted: #756a59;
+      --line: #ded3bd;
+      --accent: #3d6b47;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #171512;
+        --panel: #211e1a;
+        --ink: #ede5d8;
+        --muted: #a99d8b;
+        --line: #38322b;
+        --accent: #6ea879;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 15px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    header, main, footer {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      padding-top: 36px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 26px;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    main {
+      padding-top: 20px;
+      padding-bottom: 48px;
+    }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 17px;
+    }
+    h3 {
+      margin: 16px 0 6px;
+      font-size: 14px;
+    }
+    p, ul {
+      margin: 0 0 10px;
+    }
+    p:last-child, ul:last-child {
+      margin-bottom: 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+    }
+    a {
+      color: var(--accent);
+    }
+    footer {
+      padding-bottom: 36px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective 17 October 2026 · Applies to applications, browser extensions and tools published by <strong>gmkbenjamin</strong></p>
+  </header>
+  <main>
+    <section id="overview">
+      <h2>1. Scope and Overview</h2>
+      <p>This Privacy Policy describes how software applications, Chrome and browser extensions, utilities and web tools maintained by <strong>gmkbenjamin</strong> ("we", "our", or "the developer") handle information. Our software is built on a local-first model: we do not operate user-tracking servers, sell personal data, or monetize user activity through advertising.</p>
+      <p>Where an extension or application processes sensitive website or financial data on your device, it presents an in-product disclosure and requires your explicit acceptance before reading page data or making background network requests.</p>
+    </section>
+
+    <section id="information-processed">
+      <h2>2. Information Processed by Our Apps and Extensions</h2>
+      <p>Depending on the specific application or browser extension you install and the permissions it declares, our software may process the following categories of information locally on your device:</p>
+      <ul>
+        <li><strong>User preferences and configuration:</strong> Rules, alerts, thresholds, watched items, interface preferences, and local activity logs stored in your browser or device storage (such as <code>chrome.storage.local</code> and <code>chrome.storage.session</code>).</li>
+        <li><strong>Website content on declared hosts:</strong> For browser extensions that augment specific websites, the extension reads only the DOM elements, inputs, status indicators, and public identifiers (such as a public wallet address displayed on the page) necessary to provide the extension's single purpose on the declared host(s).</li>
+        <li><strong>Financial or trading interface data (where applicable):</strong> For trading-companion extensions, visible position details, order ticket fields, margin, profit/loss (PnL), queue status, and public token balances displayed by the target website. Our extensions never read or collect payment card numbers, bank account details, private keys, seed phrases, passwords, or authentication cookies/tokens.</li>
+        <li><strong>Local activity logs:</strong> Timestamps, action outcomes, errors, and the relevant page path on the target website so you can audit what the tool did on your device. Our extensions do not read or collect general web browsing history.</li>
+      </ul>
+    </section>
+
+    <section id="connections">
+      <h2>3. Network Connections and Third-Party Services</h2>
+      <p>We do not run developer telemetry, analytics, crash-reporting, or data-collection servers for our browser extensions. Your local settings, rules, and activity logs are never transmitted to the developer.</p>
+      <p>When an application or extension fetches public data directly from third-party APIs or WebSocket feeds (such as public market prices, protocol summaries, or transaction queue status) to perform its disclosed features, those third-party providers receive your IP address, standard HTTPS/WSS connection metadata, and the public query parameters required for the request, governed by their own privacy policies.</p>
+      <p>All executable code (JavaScript, HTML, CSS) is bundled inside the application or extension package. Remote responses are parsed strictly as data and are never executed as code.</p>
+    </section>
+
+    <section id="storage-and-retention">
+      <h2>4. Local Storage, Security and Retention</h2>
+      <p>Data used by our browser extensions is stored locally in your browser profile using standard platform APIs (<code>chrome.storage.local</code> for persistent settings, rules, snapshots, and recent activity logs, and <code>chrome.storage.session</code> or memory for temporary cross-tab coordination).</p>
+      <ul>
+        <li>Access to local extension storage is governed by your browser and operating system profile permissions. Do not use shared or untrusted browser profiles when using extensions that display or process sensitive account or financial data.</li>
+        <li>You can stop all extension processing and background alarms at any time by disabling the extension in your browser's extension manager.</li>
+        <li>Uninstalling the extension or application permanently removes its local extension storage from your browser.</li>
+      </ul>
+    </section>
+
+    <section id="limited-use">
+      <h2>5. Chrome Web Store Limited Use Disclosure</h2>
+      <p>The use of information received from Google APIs and Chrome extension APIs adheres to the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" rel="noopener noreferrer">Chrome Web Store User Data Policy</a>, including the Limited Use requirements:</p>
+      <ul>
+        <li>We limit our use of user data strictly to providing and improving the single purpose of the specific extension you installed.</li>
+        <li>We do not sell or transfer user data to third parties, data brokers, or information resellers.</li>
+        <li>We do not use or transfer user data for serving advertisements, retargeting, or personalized marketing.</li>
+        <li>We do not use or transfer user data to determine creditworthiness or for lending purposes.</li>
+        <li>We do not allow human reading of user data by the developer, as user data remains on your device.</li>
+      </ul>
+    </section>
+
+    <section id="papermanager">
+      <h2>6. Product Annex: PaperManager for Papertrade (v0.1.0)</h2>
+      <p><strong>Single purpose:</strong> PaperManager for Papertrade is an independent Chrome extension that helps you manage and monitor Papertrade (<code>exchange.papertrade.xyz</code>) positions, queued executions, and watched entries, with related PAPER balance alerts. It is not affiliated with Papertrade or Hyperliquid.</p>
+      <h3>First-use consent</h3>
+      <p>After installation, PaperManager opens a setup screen. Before using it, you must click <strong>Accept and enable PaperManager</strong> to accept the financial risk &amp; liability disclaimer and data-handling disclosure. Without acceptance, PaperManager does not read trading data, start public feeds, or run trading controls.</p>
+      <h3>Information used on Papertrade</h3>
+      <p>On <code>https://exchange.papertrade.xyz/*</code>, PaperManager reads visible position identifiers, coins, sides, leverage, size, margin, entry and mark prices, PnL, button states, ticket fields, pending queue details, the connected public wallet address shown by the site, and public PAPER balance/staking/protocol totals. It uses this data to evaluate your configured rules, verify the intended position or ticket, watch prices, coordinate tabs, press Papertrade's own buttons (Close, Retry, Cancel, side toggle, Place Trade), and display local status or notifications.</p>
+      <p>PaperManager never reads private keys, seed phrases, passwords, authentication cookies, wallet storage, or session keys, and never signs or directly calls Papertrade's private trading intent API.</p>
+      <h3>Local storage and background checks</h3>
+      <p><code>chrome.storage.local</code> stores your consent receipt, settings and default rules, position overrides and recovery state, ticket defaults, watched orders, protection expectations (which expire after one hour), last public wallet, PAPER/protocol snapshots, and up to the latest 300 local activity entries. <code>chrome.storage.session</code> holds temporary cross-tab action claims and cancellation-helper state. PaperManager does not add application-level encryption to <code>chrome.storage.local</code>; your operating system and Chrome profile control access.</p>
+      <p>After consent, background <code>chrome.alarms</code> checks can run once per minute to read public PAPER holdings for the last stored public wallet even after Papertrade tabs close or automatic actions/alerts are toggled off. Disable the extension in Chrome to stop all background checks, or uninstall it to delete all stored records. Chrome notifications may display financial amounts on your screen.</p>
+      <h3>Public network endpoints used by PaperManager</h3>
+      <ul>
+        <li><code>https://exchange.papertrade.xyz/state/user/live</code> (sends the public wallet address, without HTTP credentials, to read public PAPER holdings) and <code>https://exchange.papertrade.xyz/query/protocol/summary</code> (reads public staking/supply totals).</li>
+        <li><code>https://exchange.papertrade.xyz/state/trading</code> (reads public instrument parameters for indicative liquidation estimates while a trade ticket is in a visible tab; omits credentials and wallet address; held in memory only for up to 15 seconds).</li>
+        <li><code>wss://stream.papertrade.xyz/connection/websocket</code> (or a Papertrade subdomain configured by the page: anonymous <code>pressure:current</code> queue subscription).</li>
+        <li><code>wss://api.hyperliquid.xyz/ws</code> (subscribes to public <code>l2Book</code> market prices by coin symbol; never sends your wallet, positions, or activity history).</li>
+      </ul>
+    </section>
+
+    <section id="changes-and-contact">
+      <h2>7. Changes and Contact</h2>
+      <p>Material changes to the types of data processed or their purposes will be reflected on this page with an updated effective date, and where required by an extension, will prompt for renewed in-product consent before taking effect.</p>
+      <p>For questions or support requests, please use the support contact or repository issue tracker listed on the corresponding Chrome Web Store or GitHub project page. Please do not include wallet addresses, financial screenshots, or sensitive credentials in support messages.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 gmkbenjamin. All rights reserved.</p>
+  </footer>
+</body>
+</html>

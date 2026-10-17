@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PaperManager privacy policy</title>
+  <style>
+:root {
+  --bg: #f4ecdb;
+  --panel: #fbf7ee;
+  --line: #ded3bd;
+  --text: #2b2620;
+  --muted: #756a59;
+  --green: #3f7a46;
+  --red: #8b2a24;
+  --amber: #9c6a12;
+  --blue: #2f5d8a;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1f1c18; --panel: #2a2621; --line: #3d372f; --text: #f1e9da; --muted: #a99d89;
+    --green: #7cbf84; --red: #e0857c; --amber: #e0b062; --blue: #8fb6de;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+#privacy-consent { margin: 16px; line-height: 1.6; }
+#privacy-consent h1 { font-size: 18px; }
+#privacy-consent p { margin: 12px 0; }
+a { color: var(--blue); }
+html, body { margin: 0; }
+body {
+  min-width: 360px; max-width: 760px; margin: 0 auto;
+  background: var(--bg); color: var(--text);
+  font: 13px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+header {
+  position: sticky; top: 0; z-index: 1;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 10px 16px; background: var(--panel); border-bottom: 1px solid var(--line);
+}
+.brand { display: flex; align-items: center; gap: 8px; }
+h1 { margin: 0; font-size: 15px; font-weight: 700; }
+h2 { margin: 0 0 6px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+main { padding: 8px 16px 20px; display: grid; gap: 10px; }
+section { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 3px 0; }
+.hint { color: var(--muted); font-size: 12px; margin: 0; }
+input[type=number], input[type=text], select {
+  height: 26px; padding: 0 6px; border: 1px solid var(--line); border-radius: 5px;
+  background: var(--bg); color: var(--text); font: inherit;
+}
+input[type=number] { width: 72px; text-align: right; }
+input[type=checkbox] { width: 16px; height: 16px; accent-color: var(--blue); margin: 0; }
+input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-offset: 1px; }
+input.bad { border-color: var(--red); }
+.save-feedback { padding: 6px 16px 0; font-size: 12px; color: var(--muted); }
+#settings-errors { margin: 4px 0 0; color: var(--red); }
+.switch { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; cursor: pointer; }
+button { font: inherit; cursor: pointer; }
+.secondary { height: 28px; padding: 0 12px; border: 1px solid var(--text); border-radius: 6px; background: transparent; color: var(--text); }
+#status { display: grid; gap: 4px; }
+#status .line { display: flex; gap: 8px; align-items: baseline; }
+#status .lamp { width: 8px; height: 8px; border-radius: 50%; flex: none; background: var(--muted); align-self: center; }
+#status .ok .lamp { background: var(--green); }
+#status .warn .lamp { background: var(--amber); }
+#status .err .lamp { background: var(--red); }
+.rule { border: 1px solid var(--line); border-radius: 6px; padding: 8px; margin-bottom: 8px; display: grid; gap: 6px; background: var(--bg); }
+.rule .row { padding: 0; }
+.rule input[type=number] { width: 64px; }
+.rule input.coins { width: 110px; }
+.rule .tools { margin-left: auto; display: inline-flex; gap: 4px; }
+.rule .tools button { width: 26px; height: 26px; border: 1px solid var(--line); border-radius: 5px; background: var(--panel); color: var(--text); }
+.rule.off { opacity: .6; }
+#log { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; max-height: 260px; overflow: auto; }
+#log li { padding: 4px 6px; border-radius: 5px; background: var(--bg); }
+#log li time { color: var(--muted); margin-right: 6px; font-variant-numeric: tabular-nums; }
+#log li.warn b { color: var(--amber); }
+#log li.error b { color: var(--red); }
+.notes ul { margin: 0; padding-left: 18px; color: var(--muted); }
+@media (max-width: 420px) {
+  body { min-width: 0; }
+  header { flex-wrap: wrap; }
+}
+
+  </style>
+</head>
+<body>
+  <header><h1>PaperManager privacy policy</h1></header>
+  <main>
+    <section>
+      <h2>Effective 17 October 2026 · version 0.1.0</h2>
+      <p>PaperManager for Papertrade is an independent Chrome extension maintained by gmkbenjamin. Its single purpose is to help you manage and monitor Papertrade positions, queued executions and watched entries, with related PAPER balance alerts. It is not affiliated with Papertrade or Hyperliquid.</p>
+      <p>After installation, PaperManager opens a setup screen. Before using it, you must click <strong>Accept and enable PaperManager</strong> to accept the financial risk &amp; liability disclaimer and the data-handling disclosure. Closing setup or reading the linked pages does not accept them. Without acceptance, it does not read trading data, start public feeds or run trading controls. The current disclosure version and acceptance time are saved in this browser. Older privacy-only acceptance does not cover the financial risk disclaimer and requires a new acceptance.</p>
+    </section>
+    <section>
+      <h2>Information used</h2>
+      <p>On exchange.papertrade.xyz, PaperManager reads visible position identifiers, coins, sides, leverage, size, margin, entry and mark prices, PnL, button states, ticket fields and pending queue details. It reads the connected public wallet address shown by the site and public PAPER balance, staking and protocol totals.</p>
+      <p>It uses this information to evaluate your rules, verify the intended position or ticket, watch prices, coordinate tabs, press the site's native controls and show status or alerts. Activity records may contain financial amounts, position details, timestamps, browser tab identifiers and the relevant Papertrade page path. It does not read your general browsing history.</p>
+      <p>PaperManager never reads private keys, seed phrases, passwords, authentication cookies, wallet storage or session keys. It never signs or directly submits an intent to Papertrade's trading API. The website handles authentication and signing when its own buttons are pressed.</p>
+    </section>
+    <section>
+      <h2>Storage and retention</h2>
+      <p>Chrome's local extension storage holds your consent receipt, settings and rules, position overrides and recovery state, ticket defaults, watched orders, protection expectations, last public wallet, PAPER/protocol snapshots and the latest 300 activity entries. Records are not synced by PaperManager. They can survive browser restarts.</p>
+      <p>Activity entries have no scheduled deletion; older entries fall off as new ones arrive. Completed watched orders may remain stored after they disappear from the panel; uninstalling removes all local records. Expectations stop matching after one hour and are removed opportunistically, rather than by a guaranteed deletion deadline. Temporary claims and cancellation-helper jobs use Chrome session storage and memory.</p>
+      <p>PaperManager does not implement application-level encryption of these local records. Chrome and your operating system control access to the browser profile. Anyone with access to that profile or your device may be able to read them. Do not use a shared or untrusted browser profile for sensitive trading activity.</p>
+      <p>Disable the extension in Chrome to stop its processing and requests. Closing a Papertrade tab, switching off automatic actions, or turning off PAPER alerts does not stop the background PAPER checks after agreement: they can run once a minute for the last stored public wallet while Chrome can run. Uninstalling the extension removes its Chrome local storage. Clearing ordinary browsing history does not clear extension storage. Public blockchain records and provider logs are outside PaperManager's control.</p>
+    </section>
+    <section>
+      <h2>Connections and disclosure</h2>
+      <p>PaperManager has no developer-operated data server, analytics, advertising, telemetry or data-sale service. It does not send your position records or activity log to the developer.</p>
+      <ul>
+        <li>Papertrade receives the public wallet address in an HTTPS request to exchange.papertrade.xyz/state/user/live to read public PAPER holdings. Public staking/supply totals come from exchange.papertrade.xyz/query/protocol/summary. These requests omit HTTP credentials.</li>
+        <li>Public instrument parameters for indicative liquidation prices come from exchange.papertrade.xyz/state/trading. This request omits HTTP credentials, sends no wallet address, and runs every ten seconds only while a trade ticket is in a visible tab. Parameters are held in memory, expire after fifteen seconds and are cleared on a failed read or when the tab is hidden.</li>
+        <li>Papertrade's public queue WebSocket is stream.papertrade.xyz/connection/websocket, or an HTTPS Papertrade subdomain configured by the page. It receives an anonymous queue subscription and the client name papermanager.</li>
+        <li>Hyperliquid's public WSS endpoint api.hyperliquid.xyz/ws receives coin subscriptions for l2Book price data and keepalive messages. It does not receive your wallet, positions or activity history from PaperManager.</li>
+      </ul>
+      <p>These service providers receive your network address and normal connection metadata and apply their own policies. Connections use HTTPS or WSS. The Papertrade site may send authenticated trading requests when its native controls are pressed; that site's processing is separate from PaperManager's public data requests.</p>
+      <p>Chrome notifications can display financial amounts on your screen or operating system notification surface. You can change notification preferences in PaperManager and Chrome.</p>
+    </section>
+    <section>
+      <h2>Limited use and control</h2>
+      <p>PaperManager commits to the Chrome Web Store User Data Policy's Limited Use requirements: use and transfer of user data are limited to its disclosed single purpose. It does not sell user data, use it for advertising, transfer it to data brokers, use it to determine creditworthiness or lending eligibility, or provide the developer with human access to your local records.</p>
+      <p>You can review or change settings and remove watched orders in the extension. Disable or uninstall it using Chrome's extension controls. For questions, use the developer support contact provided on the Chrome Web Store listing. Share only information you choose to disclose, and remove wallet identifiers, positions and other sensitive details from support material.</p>
+      <p>Material changes to the types of data used or their purposes will be disclosed before taking effect, with renewed consent when required.</p>
+    </section>
+  </main>
+</body>
+</html>
