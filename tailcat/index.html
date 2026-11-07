@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tailcat Privacy Policy — SmartStay Access</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6efe2;
+      --panel: #fbf7ef;
+      --ink: #2b2620;
+      --muted: #756a59;
+      --line: #ded3bd;
+      --accent: #3d6b47;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #171512;
+        --panel: #211e1a;
+        --ink: #ede5d8;
+        --muted: #a99d8b;
+        --line: #38322b;
+        --accent: #6ea879;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 15px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    header, main, footer {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      padding-top: 36px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 26px;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    main {
+      padding-top: 20px;
+      padding-bottom: 48px;
+    }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 17px;
+    }
+    h3 {
+      margin: 16px 0 6px;
+      font-size: 14px;
+    }
+    p, ul {
+      margin: 0 0 10px;
+    }
+    p:last-child, ul:last-child {
+      margin-bottom: 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+    }
+    a {
+      color: var(--accent);
+    }
+    table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 0 0 10px; }
+    th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+    .back { font-size: 13px; }
+    table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 0 0 10px; }
+    th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+    .back { font-size: 13px; }
+    footer {
+      padding-bottom: 36px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="back"><a href="../">← All products</a></p>
+    <h1>Tailcat Privacy Policy</h1>
+    <p class="meta">Effective 7 November 2026 · Part of the <a href="../">SmartStay Access privacy policy</a></p>
+  </header>
+  <main>
+    <section>
+<p>Tailcat connects your own devices to each other, using the networking engine
+from Tailscale's open-source <a href="https://github.com/tailscale/tailcat">tailcat</a>
+project. This policy covers the Tailcat app for iPhone and iPad.</p>
+    </section>
+    <section>
+<h2>Summary</h2>
+<p>Tailcat collects nothing. There is no account, no analytics, no advertising, no
+tracking, and no third-party SDK. Nothing is sent to the developer. The app
+talks to the devices you connect it to, to Tailscale's public relay servers,
+which help those devices find and reach each other, and to tailcat.dev for the
+list of those servers. A web page you open from one of your devices can also
+load parts of itself from other websites, as it would in any browser.</p>
+    </section>
+    <section>
+<h2>Data we collect</h2>
+<p><strong>None.</strong> The developer receives no data from this app: no usage data, no
+diagnostics, no crash reports, no identifiers.</p>
+    </section>
+    <section>
+<h2>Data stored on your device</h2>
+<p>All of the following stays on your device, and Tailcat never uploads it. Your
+device's own backups, to iCloud or to a computer, include the app's files and
+settings as they do any app's; Keychain items are covered below the table.</p>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Where</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Saved connections: the name you give each one, its Tailcat address and relay details, the client key it uses, and its SSH sign-in (username, port and method)</td>
+<td>iOS Keychain, <code>WhenUnlockedThisDeviceOnly</code></td>
+<td>To reconnect to your devices</td>
+</tr>
+<tr>
+<td>Client keys, the SSH keys you create or import, a saved receiving address if you keep one, and your list of allowed clients</td>
+<td>iOS Keychain, <code>WhenUnlockedThisDeviceOnly</code></td>
+<td>To identify this device to others, and to decide who may connect to it</td>
+</tr>
+<tr>
+<td>SSH host keys and web certificates you have trusted</td>
+<td>iOS Keychain, <code>WhenUnlockedThisDeviceOnly</code></td>
+<td>To notice if a server changes</td>
+</tr>
+<tr>
+<td>Settings: appearance, relay region and map, this device's display name, and the local port the web page last used for each device</td>
+<td>App preferences</td>
+<td>To remember how you set the app up</td>
+</tr>
+<tr>
+<td>Files you receive or download</td>
+<td>The app's own folder, visible in the Files app under Tailcat</td>
+<td>They are yours to keep</td>
+</tr>
+<tr>
+<td>Cookies and site data from web pages you open</td>
+<td>A separate store for each web server of each saved connection</td>
+<td>So one web server's logins never reach another; removed with the connection</td>
+</tr>
+<tr>
+<td>Cookies and site data from websites you open in Safari within the app</td>
+<td>Safari within the app keeps its own, apart from Safari's and from your devices' web pages</td>
+<td>Kept as Safari keeps them for any app; removed by Erase keys and connections, not with a connection</td>
+</tr>
+</tbody>
+</table>
+<p>SSH passwords are asked for each time and never stored. <code>ThisDeviceOnly</code> means
+the Keychain items never move to another device, even through a backup.</p>
+<p>Deleting the app removes your files and settings, but iOS keeps an app's
+Keychain items after the app is deleted, and reinstalling Tailcat finds them
+again. To remove them, use <strong>Erase keys and connections</strong> in Settings before
+deleting the app. It removes every Keychain item Tailcat keeps, and the
+cookies and site data of web pages and of Safari within the app; Tailcat then
+makes one new client key, as it does when first opened, which no device has
+been given.</p>
+    </section>
+    <section>
+<h2>Data sent off your device</h2>
+<ul>
+<li><strong>To the devices you connect to:</strong> what you choose to send or open (files,
+  terminal sessions, file browsing, web pages, and forwarded ports),
+  end-to-end encrypted between your device and the other one.</li>
+<li><strong>To Tailscale's public relay servers (DERP):</strong> they help your devices find
+  each other, and carry the traffic when no direct path is available. They see
+  your device's IP address and the other device's, and encrypted packets they
+  cannot read. They are run by Tailscale Inc. The list of relays comes from
+  tailcat.dev unless you set your own, and measuring the fastest region sends
+  test messages to them.</li>
+<li><strong>Directly between your devices:</strong> when a direct path is possible, your
+  devices connect to each other directly, and each sees the other's IP
+  address.</li>
+<li><strong>To an SSH server you sign in to:</strong> your username, and your password if you
+  sign in with one.</li>
+<li><strong>To other websites, from a web page you open:</strong> a page one of your devices
+  serves can load images, fonts, scripts and frames from other websites. They
+  load directly, as they would in any browser, so those sites see your
+  device's IP address.</li>
+</ul>
+<p>Links to other websites open in Safari within the app, only after you confirm.
+Links to this device's own addresses, where Tailcat's forwards listen, don't
+open there, whether they name an address or a name that resolves to one when
+the link is offered. Safari within the app follows redirects on its own, so a
+website that redirects to one of those addresses can still reach it, as can a
+name that resolves to one only once Safari loads it. A web page can't load
+anything from this device's own addresses except its own port, so cookies
+stay with the server that set them. That block goes by address: a page that
+loads from a name resolving to this device is not stopped, and can reach
+Tailcat's other forwards, but sends none of those cookies.</p>
+    </section>
+    <section>
+<h2>Permissions</h2>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Used for</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Camera</strong></td>
+<td>Scanning another device's QR code, and taking a photo or video for one of your devices' web pages when you choose to</td>
+<td>Scanning reads frames on the device, and stores or sends none. A photo or video you take for a web page goes only to that page, as an upload you chose. Web pages can't use the camera live.</td>
+</tr>
+<tr>
+<td><strong>Microphone</strong></td>
+<td>Recording a video for one of your devices' web pages when you choose to</td>
+<td>Asked for only when you record. The recording goes only to that page. Web pages can't use the microphone live.</td>
+</tr>
+<tr>
+<td><strong>Local Network</strong></td>
+<td>Connecting directly to your devices nearby</td>
+<td>Used only for connections you make.</td>
+</tr>
+<tr>
+<td><strong>Photos (add only)</strong></td>
+<td>Saving a received image or video to your photo library from the share sheet</td>
+<td>Asked for only when you choose Save Image or Save Video. Tailcat can't see your library.</td>
+</tr>
+</tbody>
+</table>
+    </section>
+    <section>
+<h2>Tracking</h2>
+<p>Tailcat does not track you, does not collect data for advertising, and shares
+nothing with data brokers. Its privacy manifest declares no data collection and
+no tracking.</p>
+    </section>
+    <section>
+<h2>Children</h2>
+<p>Tailcat is not directed at children, and it collects no data from anyone.</p>
+    </section>
+    <section>
+<h2>Changes and contact</h2>
+<p>Changes to this policy are published at https://gmkbenjamin.github.io/privacy/#tailcat, with the date above
+updated. Tailcat is published by SmartStay Access. Questions about this policy:
+<a href="mailto:dev@smartstayaccess.com">dev@smartstayaccess.com</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 SmartStay Access · <a href="mailto:dev@smartstayaccess.com">dev@smartstayaccess.com</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Latch Privacy Policy — SmartStay Access</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6efe2;
+      --panel: #fbf7ef;
+      --ink: #2b2620;
+      --muted: #756a59;
+      --line: #ded3bd;
+      --accent: #3d6b47;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #171512;
+        --panel: #211e1a;
+        --ink: #ede5d8;
+        --muted: #a99d8b;
+        --line: #38322b;
+        --accent: #6ea879;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 15px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    header, main, footer {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      padding-top: 36px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 26px;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    main {
+      padding-top: 20px;
+      padding-bottom: 48px;
+    }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 17px;
+    }
+    h3 {
+      margin: 16px 0 6px;
+      font-size: 14px;
+    }
+    p, ul {
+      margin: 0 0 10px;
+    }
+    p:last-child, ul:last-child {
+      margin-bottom: 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+    }
+    a {
+      color: var(--accent);
+    }
+    table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 0 0 10px; }
+    th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+    .back { font-size: 13px; }
+    table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 0 0 10px; }
+    th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+    .back { font-size: 13px; }
+    footer {
+      padding-bottom: 36px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="back"><a href="../">← All products</a></p>
+    <h1>Latch Privacy Policy</h1>
+    <p class="meta">Effective 7 November 2026 · Part of the <a href="../">SmartStay Access privacy policy</a></p>
+  </header>
+  <main>
+    <section>
+<p>Latch is a personal utility that unlocks your own Mac from your own iPhone or
+iPad. This policy covers the Latch iOS app.</p>
+    </section>
+    <section>
+<h2>Summary</h2>
+<p>Latch collects nothing. There is no account, no analytics, no advertising, no
+tracking, and no third-party SDK of any kind. The app talks only to Macs you
+have explicitly paired with, and nothing is sent to the developer or to any
+other server.</p>
+    </section>
+    <section>
+<h2>Data we collect</h2>
+<p><strong>None.</strong> The developer receives no data from this app — not usage data, not
+diagnostics, not crash reports, not identifiers.</p>
+    </section>
+    <section>
+<h2>Data stored on your device</h2>
+<p>All of the following stays on your iPhone or iPad. Latch never uploads it automatically.</p>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Where</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pairing records for your Macs (name, pairing secret, addresses you entered, and the Mac's local hostname and usable LAN/VPN IPv4 and IPv6 addresses shared during QR pairing, the authenticated pairing exchange, or later authenticated status replies)</td>
+<td>iOS Keychain, <code>WhenUnlockedThisDeviceOnly</code> — <code>AfterFirstUnlockThisDeviceOnly</code> while Proximity is on</td>
+<td>So the app can recognise, authenticate to, and reach a Mac you paired</td>
+</tr>
+<tr>
+<td>A random device identifier, created the first time the app opens</td>
+<td>iOS Keychain, as for the pairing records</td>
+<td>So a paired Mac can tell your devices apart</td>
+</tr>
+<tr>
+<td>Each paired Mac's recent lock and unlock history — when, whether it locked or unlocked or a wrong password was typed at it, what did it (a phone's button, Control Center, proximity, a password or Touch ID at the Mac), the name of the phone that asked, and a likely program category when a failed attempt matches known system activity</td>
+<td>App preferences</td>
+<td>To show it in History and, if you choose, notify you; removed with the pairing</td>
+</tr>
+<tr>
+<td>Photos and silent videos taken for rejected passwords or successful password unlocks — only if capture and delivery for that trigger and media type are enabled on the Mac</td>
+<td>The app's own storage, protected while the phone is locked and excluded from backups; the latest 30 captured events per Mac</td>
+<td>To show in History and, by separate per-trigger photo/video notification settings, with alerts; removed with the pairing</td>
+</tr>
+<tr>
+<td>Each paired Mac's network hardware addresses and IP addresses on your network</td>
+<td>App preferences</td>
+<td>To wake a sleeping Mac with a Wake-on-LAN packet; removed with the pairing</td>
+</tr>
+<tr>
+<td>The selected Mac's name, whether it is locked, and what last happened to it</td>
+<td>iOS Keychain, in a group shared only with Latch's own widget, <code>AfterFirstUnlockThisDeviceOnly</code></td>
+<td>So the Home and Lock Screen widget can show it</td>
+</tr>
+<tr>
+<td>Your settings (Bluetooth only, Unlock on launch, Require Face ID / Touch ID, which Mac is selected, and Proximity: whether it is on, its range, when it unlocks, how soon it locks, whether it needs the phone unlocked, walked up, or in your hand, a near reading you set from the desk, which alerts you chose, the Bluetooth identifier of the Mac it watches, and whether the phone was last near it or away), and when the app last locked a Mac</td>
+<td>App preferences</td>
+<td>To remember how you configured the app</td>
+</tr>
+</tbody>
+</table>
+<p>Proximity reports to your Mac from the background, usually while your phone is
+locked, and every report is signed with the pairing secret. While it is on, the
+two Keychain items above are therefore readable once the phone has been
+unlocked after starting up, rather than only while it is unlocked. Turning
+Proximity off puts them back — once the Mac has been told it is off. If it can't
+be told then, the app waits for the Mac to come into Bluetooth range and tells
+it, and the items stay readable until it has.</p>
+<p>The device identifier is a random value created locally by Latch. It is not the
+IDFA, not the IDFV, and is not used for advertising, tracking, or
+identification across apps. <code>ThisDeviceOnly</code> means neither Keychain item ever
+moves to another device, even through a backup.</p>
+<p>Deleting the app removes your settings but not the Keychain items: iOS keeps an
+app's Keychain items after the app is deleted. Your pairing records and device
+identifier therefore stay on the device, and reinstalling Latch picks them up
+again. To remove the pairing records, remove your Macs in the app before
+deleting it — touch and hold a Mac and choose <strong>Remove pairing</strong>.</p>
+    </section>
+    <section>
+<h2>Authenticator associations and Mac access</h2>
+<p>Saved authenticator accounts can include website domains you enter for AutoFill suggestions. Those associations stay with the protected account vault, synchronize directly to paired Macs with authenticator access, and are included in encrypted backups you choose to create. Enabling AutoFill shares credential identities with the operating system; Latch requires device-owner authentication before providing a code.</p>
+<p>Device permissions and the Secure Mac automatic-unlock hold are stored in the Mac’s Keychain. The phone receives its current permissions and each reachable Mac’s confirmed state. Removing permission prevents future requests; it does not remotely erase accounts or captures already saved on the phone.</p>
+<p>Optional Mac automation rules stay on that Mac. They contain the event, Shortcut name or script path, literal arguments and timeout you choose. Latch records recent result metadata, not script output. Shortcuts and scripts run with your Mac user’s access and may perform network or other actions you have configured in them. These user-selected actions are separate from Latch’s direct paired-device communications.</p>
+    </section>
+    <section>
+<h2>Optional local diagnostics</h2>
+<p><strong>Settings → Diagnostics</strong> on iPhone, iPad and Mac can record troubleshooting logs. This is off by default. Logs include connection and handshake stages, request timing, signal strength and proximity policy flags, lock-event times and causes, notification scheduling outcomes and available OS delivery records, and widget save/reload requests. They exclude passwords, pairing secrets, device names, network addresses, photos, videos, message payloads, typed text and pointer positions. Device aliases use a private random salt that changes each launch; random request IDs let you compare the same exchange across your devices.</p>
+<p>The app keeps up to 8 MiB of rolling logs in its own Application Support storage, plus one export copy of up to 8 MiB, excluded from backups. On iOS these files are protected until the first unlock after restarting, then remain writable for background diagnostics. Older entries are replaced; recording does not keep the phone or Mac awake. Turning recording off stops new entries, and <strong>Clear saved logs</strong> removes the rolling files and local export. Copies you have shared must be removed separately.</p>
+<p>Logs stay on the device unless you choose <strong>Prepare logs for sharing</strong> and share the export. They can reveal times of activity and near/away states, so review them before sharing. The developer receives no diagnostic data automatically. Recording does not change your lock/unlock rules or adapt them automatically.</p>
+    </section>
+    <section>
+<h2>Live camera and microphone</h2>
+<p>Camera &amp; Mic is an optional, foreground live view from your paired Mac to this iPhone or iPad. The iPhone asks for Face ID, Touch ID or its passcode before starting; macOS separately requires Camera and Microphone permission. Video and audio use a dedicated authenticated encrypted network connection. They stay in bounded memory buffers and are not recorded, added to History, uploaded to a cloud service or sent to the developer. The iPhone only plays the Mac audio; this feature does not use the iPhone microphone.</p>
+<p>Close live view, leave the iPhone app, or use Stop on either device to end it. If the connection is lost, a continuous-time lease stops capture within 12 seconds, plus device cleanup. System sleep, pairing revocation and security captures also stop live view. Security photos and silent clips remain separate, opt-in features described below.</p>
+    </section>
+    <section>
+<h2>Data sent off your device</h2>
+<p>Latch sends a pairing request to the Mac you are pairing with, and unlock and
+lock requests, requests to turn its displays off, sleep it, mute it, play or
+pause, or play its alert sound, requests for photos or silent videos it took, status queries
+and, while Proximity is on, whether your phone is near, its Bluetooth signal
+strength, how long ago it last read as far away, whether it counted your steps on the
+way, whether it is on a charger, whether it is in your hand (when you ask for
+that), whether it walked off while out of touch with the Mac, whether it is locked, your
+Proximity settings, and with each lock or unlock request where in the app it
+came from <strong>only to the Macs you paired</strong>, over your local network, Bluetooth
+LE, or a VPN or private network you run yourself. There is no developer server and no cloud
+component.</p>
+<p>When a paired Mac can't be found, the app may send a Wake-on-LAN packet to the
+addresses that Mac last had on your network — only while your phone is on that
+same network. The packet carries only the Mac's own hardware address, which
+wakes it.</p>
+<p>That traffic is end-to-end encrypted between your devices using Curve25519 ECDH
+key agreement, HKDF, and AES-GCM, and each request is HMAC-signed with the
+pairing secret established when you paired.</p>
+<p>Each request tells the Mac which device sent it, so the Mac can list who
+unlocked it: the device identifier, and a label such as “iPhone · 3F2A” — the
+model name iOS reports, plus a tag taken from the identifier. The identifier is
+the one exception to the encryption: it is also sent unencrypted at the start of
+each connection, so other devices on the same network or within Bluetooth range
+can see it. It is random and reveals nothing about you.</p>
+    </section>
+    <section>
+<h2>Your Mac login password</h2>
+<p>Latch on the Mac can store your macOS login password so it can type it at the
+lock screen. <strong>The saved password is stored on the Mac only and is never sent
+back to the iOS app.</strong> During normal unlocking, the iOS app sends a
+request meaning "unlock"; the Mac supplies its own password locally. In
+<strong>Mac Settings</strong> on iPhone, you may enter a replacement after authenticating
+on the iPhone. That replacement is held temporarily in memory, sent only to
+the selected paired Mac over the encrypted authenticated connection, and saved
+there. It is not saved in iPhone preferences, history or diagnostic logs, and
+the field is cleared when saved or when leaving the password screen. This changes
+Latch's saved copy, not your macOS account password. Latch
+types it only into the lock screen's masked password field, and nowhere else.</p>
+<p>Latch on the Mac also keeps a short history of its locks and unlocks, and of
+wrong passwords typed at its lock screen, on the Mac, so your paired phones can
+show it. To tell a password from Touch ID, a lock by hand from one the Mac made
+itself, and to notice a wrong password, it reads the lock screen's own entries
+in the Mac's system log — while the screen is locked, it watches for the wrong
+password entry. After a rejected password, it also reads a short, filtered
+window of system power-activity entries to recognise a matching Codex Computer
+Use interval. Only the likely source category is kept with the history and
+sent to paired phones. It is labelled as a correlation, and other attempts
+show source unknown. Raw log entries, process IDs, password contents and typed
+text are not kept or sent.</p>
+    </section>
+    <section>
+<h2>Latch on the Mac</h2>
+<p>The iOS Mac Settings screen reads and changes preferences saved in Latch on
+the selected paired Mac, including capture, proximity, startup and password
+storage settings. Changes use the same encrypted authenticated connection as
+unlocking. You may also upload a custom alert audio file of up to 256 KB; the
+Mac validates and stores that file locally. macOS permission approvals must
+be completed on the Mac. Disabling unlock requests keeps only paired settings
+and status available over Bluetooth, so you can enable requests again from the
+iPhone; lock, unlock, actions and proximity automation remain disabled.</p>
+<p>The Mac app keeps everything it stores on the Mac, and sends it only to your
+paired phones:</p>
+<ul>
+<li><strong>Unlock photos and silent videos.</strong> Mac Settings has separate controls for
+  failed attempts and successful password unlocks, with independent photo,
+  3/5/10-second video, away-only, photo-delivery and video-delivery switches.
+  New options are off; an existing failed-attempt photo choice is preserved.
+  Successful password capture excludes Latch, Touch ID and Apple Watch unlocks.
+  Enabling capture requests camera permission. The camera light comes on, and
+  no microphone or audio is recorded. The Mac keeps the latest 20 captured
+  events in a private local folder. Photo files are limited to 512 KiB and
+  video files to 2 MiB. Only media captured with delivery enabled, and still
+  permitted by the current delivery setting, can be fetched by paired phones
+  over their encrypted authenticated connection. Local-only captures can be
+  opened from Settings in Finder. Removing the last pairing or resetting
+  pairings deletes all Mac captures.</li>
+<li><strong>Notification media copies.</strong> iOS makes a separate photo or video copy for
+  the operating system when that attachment is enabled. These copies remain
+  readable after the phone's first unlock following a restart, so alerts can
+  display them while locked. A bounded in-memory cache holds recently received
+  media for this purpose. Notification attachments are managed by iOS and can
+  remain in Notification Center until you dismiss the notification.</li>
+<li><strong>Pairing secrets</strong> are kept in a file encrypted with a key held in your login
+  keychain; your login password, in the keychain or in a file encrypted the
+  same way.</li>
+<li><strong>For proximity</strong>, it stores each paired phone's Bluetooth identifier, and
+  the routers of networks you told it not to lock on. While a phone's link is
+  down it listens for that phone's own Bluetooth broadcasts — to lock once the
+  phone has gone, or to hold a lock off for a few minutes while it is still on
+  the desk. Never to unlock.
+  It writes each proximity report (near or away, signal strength, whether the
+  phone is on a charger) to the Mac's system log, which macOS keeps for a few
+  days.</li>
+<li><strong>It advertises a stable identifier</strong> — in its Bluetooth name and on the
+  local network — so your phones can find it. Anyone nearby can see that a
+  Latch Mac is there.</li>
+</ul>
+    </section>
+    <section>
+<h2>Permissions</h2>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Used for</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Camera</strong></td>
+<td>Scanning the pairing QR code shown on your Mac</td>
+<td>Frames are processed on device to read the code. No image or video is stored, and none is transmitted.</td>
+</tr>
+<tr>
+<td><strong>Local Network</strong> / Bonjour</td>
+<td>Finding your Mac on the same Wi-Fi, sending it pairing, unlock, lock, action, media and status requests, and waking it from sleep</td>
+<td>Bonjour discovery of the <code>_latch._tcp</code> service and the temporary <code>_latch-live._tcp</code> live-view service, with saved hostnames and IP addresses as fallback routes. Routing hints never establish identity or proximity; requests are sent only after the Mac authenticates the connection. Bluetooth only disables network fallback. A Wake-on-LAN packet goes only to that Mac's last addresses, and only while your phone is on the same network.</td>
+</tr>
+<tr>
+<td><strong>Bluetooth</strong></td>
+<td>Finding and reaching a nearby Mac, and Proximity</td>
+<td>Used to talk to the Latch Mac app, not for location or beacon scanning. While Proximity is on, the app keeps a Bluetooth link to that one Mac in the background and measures its signal strength; the reading goes only to that Mac, along with whether the phone is on a charger — a phone on a charger that hasn't moved is parked, so a change in the signal then isn't its owner coming or going.</td>
+</tr>
+<tr>
+<td><strong>Motion &amp; Fitness</strong></td>
+<td>Proximity: telling a weak signal from you walking off</td>
+<td>While Proximity is on, the app asks iOS whether your phone is lying still or moving. A phone that hasn't moved hasn't changed its distance to your Mac, so a dip in the signal then doesn't lock the Mac, and a rise doesn't unlock it. With <strong>Only after walking up</strong> on, while your Mac is locked and you may be approaching it, the app also asks the step counter whether you took a few steps since shortly before your phone came near, and tells your Mac only yes or no. Raw motion readings are not saved or sent; optional local diagnostics can record the same walking, held-phone and proximity flags described above. Without this permission, proximity goes by the signal alone.</td>
+</tr>
+<tr>
+<td><strong>Notifications</strong></td>
+<td>Proximity alerts, and the locks, unlocks and wrong passwords you choose to hear of — by default an unlock or a wrong password at the Mac while you were away. Photos and videos have separate attachment switches for failed attempts and successful password unlocks</td>
+<td>Posted by the app on your device. Media comes from your paired Mac; nothing is sent to Apple's push service or anywhere else.</td>
+</tr>
+<tr>
+<td><strong>Face ID / Touch ID</strong></td>
+<td>Confirming it is you before unlocking</td>
+<td>Handled entirely by iOS. Latch receives only a success or failure result and never has access to your biometric data.</td>
+</tr>
+</tbody>
+</table>
+    </section>
+    <section>
+<h2>Tracking</h2>
+<p>Latch does not track you. It does not collect data for advertising, does not
+share data with data brokers, and contains no tracking domains. The bundled
+Apple privacy manifest declares no collection and no tracking.</p>
+    </section>
+    <section>
+<h2>Children</h2>
+<p>Latch is not directed at children and collects no data from anyone.</p>
+    </section>
+    <section>
+<h2>Your rights</h2>
+<p>Because no data ever reaches the developer, there is nothing for us to access,
+export, correct, or delete on your behalf. All data lives on your own devices,
+and <a href="#data-stored-on-your-device">Data stored on your device</a> explains how to
+remove it. This is also why Latch does not sell or share personal information
+under the CCPA/CPRA, and why there is no controller-held personal data under
+the GDPR.</p>
+    </section>
+    <section>
+<h2>Changes</h2>
+<p>Material changes to this policy are published at
+https://gmkbenjamin.github.io/privacy/#latch, with the date above updated.</p>
+    </section>
+    <section>
+<h2>Contact</h2>
+<p>Latch is published by SmartStay Access. Questions about this policy:
+<a href="mailto:dev@smartstayaccess.com">dev@smartstayaccess.com</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 SmartStay Access · <a href="mailto:dev@smartstayaccess.com">dev@smartstayaccess.com</a></p>
+  </footer>
+</body>
+</html>
